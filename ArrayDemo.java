@@ -2,11 +2,12 @@ public class ArrayDemo{
 	public static void printArray(int[]ary){
 		int i = 0;
 		int j = ary.length ;
-		String str = "";
+		String str = "{ ";
 		while (i<j){
-			str = (ary[i] + " " + str);
+			str = (ary[i] + ", " + str);
 			i++;
 		}
+		str += "}\n";
 		System.out.println(str);
 	}
 	public static void printArray(int[][]ary){
@@ -29,6 +30,6 @@ public class ArrayDemo{
 			int[]TestArray = new int[10];
 			int[][]TestArray2 = new int[5][5];
 		//	((printArray(TestArray)) + "\n")  // Testing printArray
-			printArray(TestArray2);
+			printArray(TestArray);
 	}
 }
